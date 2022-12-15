@@ -17,7 +17,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin ({
         template: './index.html',
-        title: 'Text Bearbeiten Editor',
+        title: 'text-bearbeiten',
       }),
       new InjectManifest ({
         swSrc: './src-sw.js',
@@ -26,12 +26,11 @@ module.exports = () => {
       new WebpackPwaManifest ({
         fingerprints: false,
         inject: true,
-        name: 'Text Bearbeiten',
+        name: 'text-bearbeiten',
         short_name: 'Editor',
         description: 'Edit text with ease!',
-        // background: 'linear-gradient(146deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)',
-        background_color: '#00d4ff',
-        theme_color: '#00d4ff',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
         start_url: '/',
         publicPath: '/',
         icons: [
