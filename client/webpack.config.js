@@ -9,8 +9,6 @@ module.exports = () => {
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js',
-      editor: './src/js/editor.js',
-      header: './src/js/header.js',
     },
     output: {
       filename: '[name].bundle.js',
@@ -34,8 +32,8 @@ module.exports = () => {
         // background: 'linear-gradient(146deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)',
         background_color: '#00d4ff',
         theme_color: '#00d4ff',
-        start_url: './',
-        publicPath: './',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
